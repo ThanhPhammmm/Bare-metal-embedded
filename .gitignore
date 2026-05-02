@@ -1,55 +1,90 @@
-# Prerequisites
-*.d
+# ========================
+# IDE (USER SETTINGS)
+# ========================
+.vscode/
+.idea/
+*.code-workspace
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# ========================
+# STM32CubeIDE (2.Workspace)
+# ========================
+**/Debug/
+**/Release/
+**/.settings/
+**/.metadata/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+!**/.project
+!**/.cproject
+!**/*.ioc
 
-# Precompiled Headers
-*.gch
-*.pch
+# ========================
+# KEIL MDK (4.Workspace)
+# ========================
+**/Objects/
+**/Listings/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+**/*.axf
+**/*.crf
+**/*.dep
+**/*.lst
+**/*.map
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+!**/*.uvprojx
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+**/*.uvoptx
+**/*.uvgui.*
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# ========================
+# BUILD CHUNG
+# ========================
+**/build/
+**/bin/
+**/obj/
+**/out/
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+**/*.o
+**/*.a
+**/*.so
+**/*.elf
+**/*.d
 
-# debug information files
-*.dwo
+# ========================
+# HTML / LOG
+# ========================
+**/*.htm
+**/*.html
+**/*.log
+
+# ========================
+# FIRMWARE OUTPUT
+# ========================
+**/*.hex
+**/*.bin
+
+# ========================
+# ESP32 / ARDUINO
+# ========================
+5.ESP32/build/
+**/*.ino.cpp
+**/*.ino.elf
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# OPTIONAL
+# ========================
+__pycache__/
+*.pyc
+node_modules/
+dist/
+
+# ========================
+# SECRETS
+# ========================
+.env
+*.key
+*.pem
