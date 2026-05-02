@@ -5,6 +5,8 @@
 .idea/
 *.code-workspace
 
+Docs/Emebdded_system_programming_on_CortexM3M4*
+
 # ========================
 # STM32CubeIDE (2.Workspace)
 # ========================
