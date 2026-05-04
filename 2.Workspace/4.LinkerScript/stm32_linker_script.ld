@@ -16,6 +16,7 @@ SECTIONS
         *(.text)
         *(.rodata)
         *(.rodata*)
+        . = ALIGN(4);
         _etext = .;
     }> FLASH
 
@@ -26,6 +27,7 @@ SECTIONS
         *(.data*)
         *(.dma_buffer)
         *(.ccmram)
+        . = ALIGN(4);
         _edata = .;
     }> SRAM AT> FLASH
 
@@ -34,6 +36,8 @@ SECTIONS
         _sbss = .;
         *(.bss)
         *(.bss*)
+        *(COMMON)
+        . = ALIGN(4);
         _ebss = .;
     }> SRAM
 }

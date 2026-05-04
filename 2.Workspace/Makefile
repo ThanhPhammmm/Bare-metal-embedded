@@ -1,7 +1,7 @@
 CC=arm-none-eabi-gcc
 MACH=cortex-m4
 CFLAGS= -c -mcpu=$(MACH) -mthumb -std=gnu11 -Wall -O0
-LDFLAGS= -nostdlib -T 4.LinkerScript/stm32_linker_script.ld
+LDFLAGS= -nostdlib -T 4.LinkerScript/stm32_linker_script.ld -Wl,-Map=6.MapFinal/final.map
 
 SRC=1.Core/1.Source/main.c
 INCLUDE=-I1.Core/2.Include
@@ -46,4 +46,4 @@ display2:$(FINAL_ELF)
 	$(READOBJ) -h $(FINAL_ELF)
 
 clean:
-	rm -f $(OBJ) $(STARTUP_OBJ)
+	rm -f $(OBJ) $(STARTUP_OBJ) $(FINAL_ELF)
