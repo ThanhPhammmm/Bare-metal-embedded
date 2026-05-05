@@ -66,6 +66,7 @@ int main(void)
         
         // Sử dụng biến thuộc .data làm thời gian delay
         delay(g_blink_rate);
+        printf("HELLO\n");
     }
     
     return 0;

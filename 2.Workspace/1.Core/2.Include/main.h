@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdint.h>
+#include <stdio.h>
 
 /* ========================================================================= */
 /* 1. Base Addresses: Định nghĩa ranh giới các vùng nhớ                       */
